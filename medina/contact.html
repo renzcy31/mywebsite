@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" type="image/x-icon" href="logo1.png">
+    <title>Contact</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body { 
+            font-family: 'Poppins';
+            font-weight: bold;   
+           background:url(img1.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;  
+           background-attachment: fixed;
+        }
+    header {
+            
+            box-shadow: 0 10px 60px rgba(0, 0, 0, .5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 120px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .LOGO {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 40px;
+            color: #402218;
+            margin-left: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+       }
+       ul {
+            list-style: none;
+       }
+       ul li {
+            display: inline-block;
+            position: relative;
+       } 
+        ul li a {
+            display: block;
+             padding: 20px 25px;
+            color:  #F2EAD3;
+            text-decoration: none;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 20px;
+       } 
+       ul li ul.dropdown {
+            width: 100%;
+            background: #402218;
+            position: absolute;
+            z-index: 999;
+            display: none;
+            border-radius: 20px;
+           text-align: center;
+      } 
+      nav ul li a:hover {
+            color: #402218;
+            background-color: #F0ECE3;
+            border-radius: 20px;
+      }
+     ul li:hover ul.dropdown {
+           display: block;
+           width: 100%;
+     }
+     li a:hover:not(.active) {
+            color: #402218;
+            background-color:#F0ECE3;
+            border-radius: 20px;
+       }
+       .active {
+            color: #402218;
+            background-color:#F0ECE3;
+            border-radius: 20px;
+       }
+      span {
+            color: #F2EAD3;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .contact-box {
+            background-color: #F2EAD3;
+            display: flex;
+            border-radius: 20px;
+        }
+        .contact-left {
+            flex-basis: 60%;
+            padding: 40px 60px;
+        }
+        .contact-right {
+            flex-basis: 40%;
+            padding: 40px;
+            background-color: #402218;
+            color: #F0ECE3;
+            border-radius: 20px;
+            background-image: url("illus.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+        }
+        .container h1 {
+            margin-top: 130px;
+            font-size: 40px;
+            text-align: center;
+            color: #F0ECE3;
+        }
+        .container p {
+            margin-bottom: 40px;
+            font-size: 25px;
+            color: #F0ECE3;
+            text-align: center;
+        }
+        .input-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .input-row .input-group {
+            flex-basis: 45%;
+        }
+        input {
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            background-color: #F2EAD3;
+        } 
+        textarea {
+            width: 100%;
+            border-bottom: 2px solid black;
+            outline: none;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #F2EAD3;
+        }
+        .input-group label {
+            font-size: 30px;
+        }
+        label{
+            display: block;
+            margin-bottom: 6px;
+            color: #402218;
+            font-size: 30px;
+        }
+        button {
+            background: #402218;
+            width: 150px;
+            outline: none;
+            border: none;
+            color: #F0ECE3;
+            height: 35px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0px 5px 15px 0px rgba(28, 0, 181 0.3);
+        }
+        .contact-left h3 {
+            color: #402218;
+            font-weight: 600;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+        .contact-right h3 {
+            font-weight: 600;
+            margin-bottom: 30px;
+            font-size: 30px;
+            text-align: center;
+        }
+        tr td:first-child {
+            padding-right: 20px;
+        }
+        tr td {
+            padding-top: 20px;
+            font-size: 25px;
+        }
+        ::-webkit-scrollbar {
+        width: 15px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #483434;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #F0ECE3;
+        border-radius: 30px;
+    }
+    .container1 {
+            max-width: 2000px;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 1.5;
+        }
+        ul {
+            list-style: none;
+        }
+        .footer {
+            background-color: #24262b;
+        } 
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+        .footer-col h4 {
+            font-size: 18px;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        } 
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li::not(:last-child) {
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3 ease;
+        }
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="LOGO">Mugful Moments Cafe</a> 
+        <nav>
+    <ul>
+        <span><i class="fa-solid fa-house"></i></span>
+        <li><a href="home.html">Home</a></li>
+        <span><i class="fa-solid fa-eject"></i></span>
+        <li><a href="about.html">About</a></li>
+        <span><i class="fa-brands fa-product-hunt"></i></span>
+        <li><a href="product.html">Products</a></li>
+        <span><i class="fa-solid fa-id-badge"></i></span>
+        <li><a class="active" href="contact.html">Contact</a>
+            <li><a href="#">MyPorfolio</a>
+                <ul class="dropdown">
+                    <li><a href="https://drive.google.com/drive/folders/1bkJiP1HbPTEq8t9tMgjfd-R7yT90Tpjj?usp=drive_link">Week 1</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1bkJiP1HbPTEq8t9tMgjfd-R7yT90Tpjj?usp=drive_link">Week 2</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1ayWBQZLbKyAPytsV109R4NfaF5Ysv7SR?usp=drive_link">Week 3</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/18I8IXyC5qORyPEg3XamoX58jkg4oDewl?usp=drive_link">week 4</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1JmBi5uyM3QFpchVhszC_uHQGrRyC_Cdi?usp=drive_link">week 5</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1HZ6Ln2Vlz2eaO9ufOc47eqcJSjj_nUaM?usp=drive_link#">week 6</a></li> 
+                    <li><a href="https://drive.google.com/drive/folders/1qakOhZZVsruwFJwoMrtuZc2RU2promjq?usp=drive_link">Week 7</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1sgAqoSvDx7EWk6zd_JTzEVvwjTQrTrnY?usp=drive_link">Week 8</a></li>
+                </ul>
+        </ul>
+        </nav>
+    </header>
+    <section>
+    <div class="container">
+        <h1>Connect with Us</h1>
+        <p>
+            we would love to respond to your messages<br>
+            and give you a good services of our cafe
+        </p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Message Us</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name:</label>
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                            <div class="input-group">
+                                <label>Phone:</label>
+                                <input type="text" placeholder="Phone Number">
+                            </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email:</label>
+                            <input type="email" placeholder="Email">
+                        </div>
+                            <div class="input-group">
+                                <label>Subject:</label>
+                                <input type="text" placeholder="Product">
+                            </div>
+                            </div>
+                            <label>Message:</label>
+                            <textarea rows="5" placeholder="Your Message"></textarea>
+                            <button type="submit">Submit</button>
+                </form>
+
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td>mugfulmomentscafe@gmail.com</td>          
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td>09500607319</td>          
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td>13A Isagani St. Taytay Rizal</td>          
+                    </tr>
+                    <tr>
+                        <td>Facebook:</td>
+                        <td>mugfulmomentscafe</td>          
+                    </tr>
+                    <tr>
+                        <td>Instagram:</td>
+                        <td>@mugfulmomentscafe</td>          
+                    </tr>
+                    <tr>
+                        <td>X Twitter:</td>
+                        <td>13A Isagani St. Taytay Rizal</td>          
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+   </body>
+</html>

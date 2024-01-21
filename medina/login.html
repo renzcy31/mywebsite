@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            height: 500px;
+            width: 800px;
+            margin: auto;
+            margin-top: 50px;
+            border: 1px solid black;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+            background-color: whitesmoke;
+        }
+        .form h2 {
+            font-size: 3rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 40px;
+        }
+        .box {
+            padding: 12px;
+            width: 65%;
+            margin: 15px;
+            border: 1px solid black;
+            outline: none;
+            border-radius: 20px;
+        } 
+        #submit {
+            padding: 12px 30px;
+            width: 40%;
+            margin-top: 40px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+        }
+        #submit:hover {
+            cursor: pointer;
+            background-color: red;
+        } 
+        .form a {
+            text-decoration: none;
+            color: black;
+            margin-top: 20px;
+        }
+        .form a:hover {
+            color: aqua;
+        } 
+        .side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            background-color: antiquewhite;
+        } 
+        .side img {
+            width: 400px;
+            height: 400px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form" name="myform">
+            <h2>Sign In</h2>
+            <input type="email" name="email" class="box" id="email"placeholder="Enter"/>
+            <input type="password" name="password" class="box" id="password" placeholder="Enter Password"/>
+            <input type="button" onclick="myfunction()" value="signin" id="submit"/>
+        </form>
+        <div class="side">
+            <img src="" alt="">
+        </div>
+    </div>
+    <script>
+        function myfunction(){
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("email").value;
+            if (email == "renzcymedina31@gmail.com" && password == "hello123"){
+                    window.location.href("https://www.youtube.com/shorts/GVg9oJfBxhY");
+                    alert("login succesfully");
+        }
+        else{
+            alert("invalid information");
+            return;
+        }
+    }
+    
+    </script>
+    
+</body>
+</html>

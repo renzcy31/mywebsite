@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" type="image/x-icon" href="logo1.png">
+<title>Products</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body { 
+            font-family: 'Poppins';
+            font-weight: bold;   
+           background:url(img1.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;  
+           background-attachment: fixed;
+        }
+    header {
+            
+            box-shadow: 0 10px 60px rgba(0, 0, 0, .5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 120px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .LOGO {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 40px;
+            color: #402218;
+            margin-left: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+       }
+       ul {
+            list-style: none;
+       }
+       ul li {
+            display: inline-block;
+            position: relative;
+       } 
+        ul li a {
+            display: block;
+             padding: 20px 25px;
+            color:  #F2EAD3;
+            text-decoration: none;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 20px;
+       } 
+       ul li ul.dropdown {
+            width: 100%;
+            background: #402218;
+            position: absolute;
+            z-index: 999;
+            display: none;
+            border-radius: 20px;
+           text-align: center;
+      } 
+      ul li a:hover {
+            color: #402218;
+            background-color: #F0ECE3;
+            border-radius: 20px;
+      }
+     ul li:hover ul.dropdown {
+           display: block;
+           width: 100%;
+     }
+     li a:hover:not(.active) {
+            color: #402218;
+            background-color:#F0ECE3;
+            border-radius: 20px;
+       }
+       .active {
+            color: #402218;
+            background-color:#F0ECE3;
+            border-radius: 20px;
+       }
+      span {
+            color: #F2EAD3;
+        }
+        .span1 {
+            color: #EADBC8;
+        }
+        .title h1 {
+            text-align: center;
+            padding-top: 50px;
+            font-size: 49px;
+            color: #C8AE7D;
+            margin-top: 80px;
+       }
+       .title h1::after {
+            content: "";
+            height: 4px;
+            width: 230px;
+            background-color: black;
+            display: block;
+            margin: 40px auto;
+            margin-bottom: 10px;
+       }
+       .services {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          margin: 20px auto;
+          text-align: center;
+    }
+    .card {
+        width: 66em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px 20px;
+        padding: 25px 20px;
+        background-color: #C3B091;
+        border-radius: 20px;
+        cursor: pointer;
+        height: 55em;
+    } 
+    .card:hover {
+        background-color: #E4CDA7;
+        transition: 0.4s ease;
+    }
+    .card .icon {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .icon img {
+        height: 30em;
+        width: 24em;
+        border-radius: 20px;
+    }
+    .card h2 {
+        font-size: 28px;
+        color: #483434;
+    }
+    .card p {
+        font-size: 17px;
+        margin-bottom: 100px;
+        line-height: 1.5;
+        color: #FFF3E4;
+        width: 100%;
+    }
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #483434;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #F0ECE3;
+        border-radius: 30px;
+    }
+</style>
+</head>
+<body> 
+    <header>
+        <a href="#" class="LOGO">Mugful Moments Cafe</a> 
+        <nav>
+    <ul>
+        <span><i class="fa-solid fa-house"></i></span>
+        <li><a href="home.html">Home</a></li>
+        <span><i class="fa-solid fa-eject"></i></span>
+        <li><a href="about.html">About</a></li>
+        <span><i class="fa-brands fa-product-hunt"></i></span>
+        <li><a class="active" href="product.html">Products</a></li>
+        <span><i class="fa-solid fa-id-badge"></i></span>
+        <li><a href="contact.html">Contact</a>
+            <li><a href="#">MyPorfolio</a>
+                <ul class="dropdown">
+                    <li><a href="https://drive.google.com/drive/folders/1bkJiP1HbPTEq8t9tMgjfd-R7yT90Tpjj?usp=drive_link">Week 1</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1bkJiP1HbPTEq8t9tMgjfd-R7yT90Tpjj?usp=drive_link">Week 2</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1ayWBQZLbKyAPytsV109R4NfaF5Ysv7SR?usp=drive_link">Week 3</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/18I8IXyC5qORyPEg3XamoX58jkg4oDewl?usp=drive_link">week 4</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1JmBi5uyM3QFpchVhszC_uHQGrRyC_Cdi?usp=drive_link">week 5</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1HZ6Ln2Vlz2eaO9ufOc47eqcJSjj_nUaM?usp=drive_link#">week 6</a></li> 
+                    <li><a href="https://drive.google.com/drive/folders/1qakOhZZVsruwFJwoMrtuZc2RU2promjq?usp=drive_link">Week 7</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1sgAqoSvDx7EWk6zd_JTzEVvwjTQrTrnY?usp=drive_link">Week 8</a></li>
+                </ul>
+        </ul>
+        </nav>
+    </header>
+    <div class="section">
+        <div class="title">
+            <h1>Our<span class="span1">Products</span></h1>
+        </div>
+        <div class="services">
+            <div class="card">
+                <div class="icon">
+                    <img src="macchiato.jpg" alt="">
+                </div>
+                <h2>Macchiato</h2>
+                <p>A coffee macchiato is a simple espresso-based drink consisting of a shot of espresso "stained" or "marked" with a small amount of frothy milk. The word "macchiato" in Italian means "stained" or "spotted," highlighting the beverage's emphasis on the bold flavor of espresso with a hint of creamy texture from the milk</p>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="hot-chocolate.jpg" alt="">
+                </div>
+                <h2>Hot Chocolate</h2>
+                <p>Hot chocolate is a comforting beverage made by blending melted chocolate or cocoa powder with heated milk or water. It offers a rich, velvety texture and a sweet, chocolatey flavor, often topped with whipped cream or marshmallows for an extra indulgent touch. Perfect for warming up on a chilly day.</p>
+                
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="hot tea.jpg" alt="">
+                </div>
+                <h2>Hot Tea</h2>
+                <p>Hot tea is a soothing beverage made by steeping tea leaves or a tea bag in hot water. This timeless drink offers a variety of flavors, from herbal and green to black and white tea. Often enjoyed plain or with a splash of milk, honey, or lemon, hot tea provides a comforting and aromatic experience.</p>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="mocha.jpg" alt="">
+                </div>
+                <h2>Coffee Mocha</h2>
+                <p>Coffee mocha is a delightful blend of espresso, steamed milk, and chocolate, creating a luscious and indulgent beverage. The rich, robust flavor of coffee combines harmoniously with the sweetness of chocolate, often topped with whipped cream for an extra decadent touch.</p>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="latte.jpg" alt="">
+                </div>
+                <h2>Creamy Latte</h2>
+                <p>A creamy latte is a velvety coffee drink made with a shot of espresso and steamed milk, resulting in a smooth and well-balanced beverage. The rich, bold flavor of the espresso is complemented by the frothy, creamy texture of the milk.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="title">
+            <h1>Bread&<span class="span1">Pastries</span></h1>
+        </div>
+        <div class="services">
+            <div class="card">
+                <div class="icon">
+                    <img src="cherrypie.jpg" alt="">
+                </div>
+                <h2>Cherry Pie</h2>
+                <p>Cherry pie is a classic dessert featuring a flaky pastry crust filled with sweet and tart cherry filling. The cherries, often combined with sugar and sometimes other flavorings, create a vibrant and delicious center.Whether served warm or at room temperature, cherry pie is a delightful treat that perfectly balances the buttery crust with the fruity goodness of cherries.</p>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="cheesebread.jpg" alt="">
+                </div>
+                <h2>Cheese Bread</h2>
+                <p>Cheese bread is a savory baked treat that combines the goodness of bread with the rich flavor of cheese. Typically made by incorporating cheese into the dough or generously topping the bread with cheese before baking, it results in a deliciously gooey and flavorful creation. The combination of warm, fluffy bread and melted cheese makes cheese bread a satisfying and indulgent snack or accompaniment to various meals.
+                </p>
+                
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="donut.jpg" alt="">
+                </div>
+                <h2>Donuts</h2>
+                <p>Donuts are delectable, ring-shaped pastries, typically fried and adorned with various toppings or glazes. The soft and airy interior, often sweetened, contrasts with the crispy exterior, creating a delightful texture. Whether classic glazed, filled with cream or fruit jams, or covered in sprinkles, donuts are a beloved treat enjoyed as a breakfast item or dessert, paired perfectly with a cup of coffee.</p>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="croissants.jpg" alt="">
+                </div>
+                <h2>Croissants</h2>
+                <p>A croissant is a buttery and flaky pastry known for its crescent shape. Made from layered dough and butter, it bakes into a golden, crispy exterior while maintaining a soft, airy interior. Originating from France, the croissant's irresistible texture and rich, buttery flavor make it a popular choice for breakfast or as a delicious accompaniment to coffee or tea.</p>
+    
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="cupcake.jpg" alt="">
+                </div>
+                <h2>Cupcakes</h2>
+                <p>Cupcakes are small, individually-sized cakes, baked in cup-shaped molds. These sweet treats come in a variety of flavors and are topped with frosting, icing, or decorative elements. Portable and easy to serve, cupcakes are a delightful and versatile dessert suitable for various occasions, from celebrations to simple indulgences.</p>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

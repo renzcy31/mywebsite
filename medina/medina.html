@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('haikei.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .max {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid white;
+            max-width:500px;
+            font-size: 30px;
+            text-align: center;
+            color: aliceblue;
+        }
+        img {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            z-index: -1;
+        }
+        .index {
+            border: 3px solid white;
+            height: 15em;
+            color: white;
+            position: absolute;
+            top: 500px;
+            
+        }
+        .flow {
+            position: absolute;
+            left: 600px;
+            bottom: 700px;
+            border: 3px solid white;
+            height: 100px;
+            width: 200px;
+            overflow: auto;
+            color: white;
+        }
+        .float {
+            border: 3px solid white;
+            color: white;
+            width: 400px;
+            position: absolute;
+            top: 20px;
+            bottom: 600px;
+            left: 70em;
+            float: none;
+        }
+        .nav {
+            background-color: aliceblue;
+            position: absolute;
+            bottom: 20px;
+            font-size: 30px;
+            text-align: center;
+            list-style: none;
+        }
+        .nav li {
+            display: block;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="max">
+     <h1>Max Width</h1>
+     <p>in celebrating childrens month taysen conduct an activities for the students like graffiti, poster making, talent contest,and slogan making, when everyone is allowed to join </p>
+    </div>
+    <div class="index">
+        <h1>z-index</h1>
+        <img src="starry.jpg">
+        <p>in celebrating childrens month taysen conduct an activities for the students like graffiti, poster making, talent contest,and slogan making, when everyone is allowed to join</p>
+    </div>
+    <div class="flow">
+        <h1>Overflow</h1>
+        <p>in celebrating childrens month taysen conduct an activities for the students like graffiti, poster making, talent contest,and slogan making, when everyone is allowed to join.</p>
+    </div>
+    <div class="float">
+        <h1>float</h1>
+        <p><img src="starry.jpg" style="height: 100px; width: 100px;"> in celebrating childrens month taysen conduct an activities for the students like graffiti, poster making, talent contest,and slogan making, when everyone is allowed to join</p>
+    </div>
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#clients">skills</a></li>  
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+
+    </div>
+</body>
+</html>

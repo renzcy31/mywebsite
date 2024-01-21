@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" type="image/x-icon" href="logo1.png"> 
+   <title>Mugful Moments Cafe</title>
+    <style>
+          * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body { 
+            font-family: 'Poppins';
+            font-weight: bold;   
+           background:url(img1.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;  
+           background-attachment: fixed;
+        }
+    header {
+            
+            box-shadow: 0 10px 60px rgba(0, 0, 0, .5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 120px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .LOGO {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 40px;
+            color: #402218;
+            margin-left: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+       }
+    ul {
+        list-style: none;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+    } 
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color:  #F2EAD3;
+        text-decoration: none;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 20px;
+    } 
+    ul li ul.dropdown {
+        width: 100%;
+        background: #402218;
+        position: absolute;
+        z-index: 999;
+        display: none;
+        border-radius: 20px;
+        text-align: center;
+    } ul li a:hover {
+        color: #402218;
+            background-color: #F0ECE3;
+            border-radius: 20px;
+    }
+    ul li:hover ul.dropdown {
+        display: block;
+        width: 100%;
+    }
+    li a:hover:not(.active) {
+            color: #402218;
+            background-color:#F0ECE3;
+            border-radius: 20px;
+       }
+       .active {
+        color: #402218;
+            background-color:#F0ECE3;
+            border-radius: 20px;
+       }
+        span {
+            color: #F2EAD3;
+        }
+        .content {
+            color: black;
+            width: 50%;
+            margin-top: 3em;
+            font-size: 50px;
+        }
+        .cafe {
+            position: absolute;
+            top: 50%;
+            left: 24%;
+            max-width: 650px;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #FFF2D8;
+            font-size: 3.5em;
+            
+        }
+        .cafe a {
+            text-decoration: none;
+            color: #F4C198;
+            border: 2px solid #F4C198;
+            border-radius: 20px;
+            background-color: #402218;
+        }
+        .logo  {
+            height: 20px;
+            width: 60px;
+            position: absolute;
+            top: 2%;
+            left: 14em;
+        }
+        .logo2 img {
+            margin-top: -2%;
+            margin-left: 1em;
+            margin-right: 1%;
+            margin-bottom: -1px;
+            padding: 20px;
+        }
+        img {
+            height: 12em;
+            width: 12em;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo2">
+        <img src="logo1.png" alt="">
+        </div>
+        <header>
+            <a href="#" class="LOGO">Mugful Moments Cafe</a> 
+            <nav>
+        <ul>
+            <span><i class="fa-solid fa-house"></i></span>
+            <li><a class="active" href="home.html">Home</a></li>
+            <span><i class="fa-solid fa-eject"></i></span>
+            <li><a href="about.html">About</a></li>
+            <span><i class="fa-brands fa-product-hunt"></i></span>
+            <li><a href="product.html">Products</a></li>
+            <span><i class="fa-solid fa-id-badge"></i></span>
+            <li><a href="contact.html">Contact</a>
+                <li><a href="#">MyPorfolio</a>
+                <ul class="dropdown">
+                    <li><a href="https://drive.google.com/drive/folders/1bkJiP1HbPTEq8t9tMgjfd-R7yT90Tpjj?usp=drive_link">Week 1</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1bkJiP1HbPTEq8t9tMgjfd-R7yT90Tpjj?usp=drive_link">Week 2</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1ayWBQZLbKyAPytsV109R4NfaF5Ysv7SR?usp=drive_link">Week 3</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/18I8IXyC5qORyPEg3XamoX58jkg4oDewl?usp=drive_link">week 4</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1JmBi5uyM3QFpchVhszC_uHQGrRyC_Cdi?usp=drive_link">week 5</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1HZ6Ln2Vlz2eaO9ufOc47eqcJSjj_nUaM?usp=drive_link#">week 6</a></li> 
+                    <li><a href="https://drive.google.com/drive/folders/1qakOhZZVsruwFJwoMrtuZc2RU2promjq?usp=drive_link">Week 7</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1sgAqoSvDx7EWk6zd_JTzEVvwjTQrTrnY?usp=drive_link">Week 8</a></li>
+                </ul>
+        </ul>
+            </nav>
+        </header>
+        <section class="cafe">
+            <h1>
+                Welcome to Website of Mugful Moments Cafe
+            </h1>
+            <a href="about.html">MORE ABOUT</a>
+            <div class="logo">
+                <img src="logo1.png" alt="">
+            </div>
+        </section>
+        <script>
+            const activePage = window.location.pathname;
+            const navLinks = documen.querySelectorAll('nav a').
+            forEach(link => {
+              if(link.href.includes('${activePage}')){
+                link.classList.add("active");
+              }
+              
+            }
+              
+            )
+        </script>
+        
+</body>
+</html>
